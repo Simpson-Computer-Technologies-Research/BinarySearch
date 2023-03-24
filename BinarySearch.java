@@ -61,6 +61,8 @@ public class BinarySearch {
      * 
      * @param array The array to search
      * @param num The number to search for
+     * @param start The start index of the array
+     * @param end The end index of the array
      * 
      * @return The index where the number was found
      */
@@ -108,6 +110,8 @@ public class BinarySearch {
      * 
      * @param array The array to search
      * @param character The character to search for
+     * @param start The start index of the array
+     * @param end The end index of the array
      * 
      * @return The index where the character was found
      */
@@ -155,6 +159,8 @@ public class BinarySearch {
      * 
      * @param array The array to search
      * @param string The string to search for
+     * @param start The start index of the array
+     * @param end The end index of the array
      * 
      * @return The index where the string was found
      */
