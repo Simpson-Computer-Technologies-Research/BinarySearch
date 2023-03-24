@@ -1,5 +1,5 @@
 # Binary Search ![Stars](https://img.shields.io/github/stars/realTristan/BinarySearch?color=brightgreen) ![Watchers](https://img.shields.io/github/watchers/realTristan/BinarySearch?label=Watchers)
-![magnifying-glass-yellow-green-background_361816-2332](https://user-images.githubusercontent.com/75189508/227647470-5fb8f9b6-fef2-4c3f-b245-8502f3e98112.png)
+![4586329-map-magnifying-glasses-vintage](https://user-images.githubusercontent.com/75189508/227647593-584222a5-d840-4272-9873-0c069c3feaf2.jpg)
 
 Binary Search Algorithm in Java
 
