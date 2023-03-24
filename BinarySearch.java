@@ -34,7 +34,7 @@ public class BinarySearch {
         // Search for a character 
         if (array instanceof Character[] && value instanceof Character) {
             return indexOfChar(
-                (Character[]) array, (Character) value, 0, array.length - 1
+                (Character[]) array, (char) value, 0, array.length - 1
             );
         }
 
