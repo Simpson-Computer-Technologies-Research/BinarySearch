@@ -1,8 +1,6 @@
 # Binary Search ![Stars](https://img.shields.io/github/stars/realTristan/BinarySearch?color=brightgreen) ![Watchers](https://img.shields.io/github/watchers/realTristan/BinarySearch?label=Watchers)
 ![4586329-map-magnifying-glasses-vintage](https://user-images.githubusercontent.com/75189508/227647702-bc2766da-1571-4504-95c8-fac6065ca6e2.jpg)
 
-Binary Search Algorithm in Java
-
 # Replit
 https://replit.com/@realTristan/pset8#Main.java
 
