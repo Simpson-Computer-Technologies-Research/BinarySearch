@@ -1,5 +1,3 @@
-package pset8;
-
 /*
  *
  * Binary Search works best for sorted arrays. It works by dividing the array
