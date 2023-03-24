@@ -1,3 +1,5 @@
+package pset8;
+
 /*
  *
  * Binary Search works best for sorted arrays. It works by dividing the array
@@ -18,30 +20,30 @@ public class BinarySearch {
      * This method is a wrapper for the other methods in this class. It checks the
      * type of the array and key, then calls the appropriate method.
      * 
-     * @param array The array to search
-     * @param key The key to search for
+     * @param arr The array to search
+     * @param value The key to search for
      * 
      * @return The index where the key was found
      */
-    public static <T> int indexOf(T[] array, T key) {
+    public static <T> int indexOf(T[] array, T value) {
         // Search for an integer
-        if (array instanceof Integer[] && key instanceof Integer) {
+        if (array instanceof Integer[] && value instanceof Integer) {
             return indexOfInt(
-                (Integer[]) array, (Integer) key, 0, array.length - 1
+                (Integer[]) array, (int) value, 0, array.length - 1
             );
-        } 
+        }
 
         // Search for a character 
-        if (array instanceof Character[] && key instanceof Character) {
+        if (array instanceof Character[] && value instanceof Character) {
             return indexOfChar(
-                (Character[]) array, (Character) key, 0, array.length - 1
+                (Character[]) array, (Character) value, 0, array.length - 1
             );
         }
 
         // Search for a string
-        if (array instanceof String[] && key instanceof String) {
+        if (array instanceof String[] && value instanceof String) {
             return indexOfString(
-                (String[]) array, (String) key, 0, array.length - 1
+                (String[]) array, (String) value, 0, array.length - 1
             );
         }
 
@@ -66,9 +68,8 @@ public class BinarySearch {
      * 
      * @return The index where the number was found
      */
-    private static <T> int indexOfInt(
-        Integer[] array, Integer num, int start, int end
-    ) {
+    public static int indexOfInt(Integer[] array, int num, int start, int end) 
+    {
         // Find the middle index
         int middleIndex = (start + end) / 2;
 
@@ -109,15 +110,14 @@ public class BinarySearch {
      * character is found or the array is empty.
      * 
      * @param array The array to search
-     * @param character The character to search for
+     * @param c The character to search for
      * @param start The start index of the array
      * @param end The end index of the array
      * 
      * @return The index where the character was found
      */
-    private static int indexOfChar(
-        Character[] array, Character character, int start, int end
-    ) {
+    public static int indexOfChar(Character[] array, char c, int start, int end)
+    {
         // Find the middle index
         int middleIndex = (start + end) / 2;
 
@@ -127,20 +127,20 @@ public class BinarySearch {
         }
 
         // If the middle index equals the key, return the middle index
-        if (array[middleIndex] == character) {
+        if (array[middleIndex] == c) {
             return middleIndex;
         }
 
         // If the key is less than the value at the middle index
         // search the left half of the provided array
-        if (character < array[middleIndex]) {
-            return indexOfChar(array, character, start, middleIndex - 1);
+        if (c < array[middleIndex]) {
+            return indexOfChar(array, c, start, middleIndex - 1);
         }
 
         // If the key is greater than the value at the middle index
         // search the right half of the provided array
-        if (character > array[middleIndex]) {
-            return indexOfChar(array, character, middleIndex + 1, end);
+        if (c > array[middleIndex]) {
+            return indexOfChar(array, c, middleIndex + 1, end);
         }
 
         // If the key was not found, return -1
@@ -158,15 +158,14 @@ public class BinarySearch {
      * found or the array is empty.
      * 
      * @param array The array to search
-     * @param string The string to search for
+     * @param str The string to search for
      * @param start The start index of the array
      * @param end The end index of the array
      * 
      * @return The index where the string was found
      */
-    private static int indexOfString(
-        String[] array, String string, int start, int end
-    ) {
+    public static int indexOfString(String[] array, String str, int start, int end) 
+    {
         // Find the middle index
         int middleIndex = (start + end) / 2;
 
@@ -176,20 +175,20 @@ public class BinarySearch {
         }
 
         // If the middle index equals the key, return the middle index
-        if (array[middleIndex].equals(string)) {
+        if (array[middleIndex].equals(str)) {
             return middleIndex;
         }
 
         // If the key is less than the value at the middle index
         // search the left half of the provided array
-        if (string.compareTo(array[middleIndex]) < 0) {
-            return indexOfString(array, string, start, middleIndex - 1);
+        if (str.compareTo(array[middleIndex]) < 0) {
+            return indexOfString(array, str, start, middleIndex - 1);
         }
 
         // If the key is greater than the value at the middle index
         // search the right half of the provided array
-        if (string.compareTo(array[middleIndex]) > 0) {
-            return indexOfString(array, string, middleIndex + 1, end);
+        if (str.compareTo(array[middleIndex]) > 0) {
+            return indexOfString(array, str, middleIndex + 1, end);
         }
 
         // If the key was not found, return -1
