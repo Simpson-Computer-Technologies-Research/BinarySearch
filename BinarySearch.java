@@ -1,3 +1,5 @@
+package pset8;
+
 /*
  *
  * Binary Search works best for sorted arrays. It works by dividing the array
@@ -27,22 +29,19 @@ public class BinarySearch {
         // Search for an integer
         if (array instanceof Integer[] && value instanceof Integer) {
             return indexOfInt(
-                (Integer[]) array, (int) value, 0, array.length - 1
-            );
+                (Integer[]) array, (int) value, 0, array.length - 1);
         }
 
         // Search for a character 
         if (array instanceof Character[] && value instanceof Character) {
             return indexOfChar(
-                (Character[]) array, (char) value, 0, array.length - 1
-            );
+                (Character[]) array, (char) value, 0, array.length - 1);
         }
 
         // Search for a string
         if (array instanceof String[] && value instanceof String) {
             return indexOfString(
-                (String[]) array, (String) value, 0, array.length - 1
-            );
+                (String[]) array, (String) value, 0, array.length - 1);
         }
 
         // Return -1 for invalid option
