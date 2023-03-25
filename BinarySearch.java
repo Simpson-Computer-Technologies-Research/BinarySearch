@@ -1,3 +1,5 @@
+package pset8;
+
 /*
  *
  * Binary Search works best for sorted arrays. It works by dividing the array
@@ -86,12 +88,7 @@ public class BinarySearch {
 
         // If the key is greater than the value at the middle index
         // search the right half of the provided array
-        if (num > array[middleIndex]) {
-            return indexOfInt(array, num, middleIndex + 1, end);
-        }
-
-        // If the key was not found, return -1
-        return -1;
+        return indexOfInt(array, num, middleIndex + 1, end);
     }
 
     /*
@@ -134,12 +131,7 @@ public class BinarySearch {
 
         // If the key is greater than the value at the middle index
         // search the right half of the provided array
-        if (c > array[middleIndex]) {
-            return indexOfChar(array, c, middleIndex + 1, end);
-        }
-
-        // If the key was not found, return -1
-        return -1;
+        return indexOfChar(array, c, middleIndex + 1, end);
     }
 
     /*
@@ -169,24 +161,25 @@ public class BinarySearch {
             return -1;
         }
 
+        // Compare the strings.
+        // comparison == 0 if strings are equal
+        // comparison < 0 if str is less than the value at the middle index
+        // comparison > 0 if str is greater than the value at the middle index
+        int comparison = str.compareTo(array[middleIndex]);
+
         // If the middle index equals the key, return the middle index
-        if (array[middleIndex].equals(str)) {
+        if (comparison == 0) {
             return middleIndex;
         }
 
         // If the key is less than the value at the middle index
         // search the left half of the provided array
-        if (str.compareTo(array[middleIndex]) < 0) {
+        if (comparison < 0) {
             return indexOfString(array, str, start, middleIndex - 1);
         }
 
         // If the key is greater than the value at the middle index
         // search the right half of the provided array
-        if (str.compareTo(array[middleIndex]) > 0) {
-            return indexOfString(array, str, middleIndex + 1, end);
-        }
-
-        // If the key was not found, return -1
-        return -1;
+        return indexOfString(array, str, middleIndex + 1, end);
     }
 }
