@@ -65,13 +65,13 @@ public class BinarySearch {
      */
     public static int indexOfInt(Integer[] array, int num, int start, int end) 
     {
-        // Find the middle index
-        int middleIndex = (start + end) / 2;
-
         // If we've reached the end of the array, return -1
         if (start > end) {
             return -1;
         }
+        
+        // Find the middle index
+        int middleIndex = (start + end) / 2;
 
         // If the middle index equals the key, return the middle index
         if (array[middleIndex] == num) {
@@ -108,13 +108,13 @@ public class BinarySearch {
      */
     public static int indexOfChar(Character[] array, char c, int start, int end)
     {
-        // Find the middle index
-        int middleIndex = (start + end) / 2;
-
         // If we've reached the end of the array, return -1
         if (start > end) {
             return -1;
         }
+
+        // Find the middle index
+        int middleIndex = (start + end) / 2;
 
         // If the middle index equals the key, return the middle index
         if (array[middleIndex] == c) {
@@ -151,13 +151,13 @@ public class BinarySearch {
      */
     public static int indexOfString(String[] array, String str, int start, int end) 
     {
-        // Find the middle index
-        int middleIndex = (start + end) / 2;
-
         // If we've reached the end of the array, return -1
         if (start > end) {
             return -1;
         }
+
+        // Find the middle index
+        int middleIndex = (start + end) / 2;
 
         // Compare the strings.
         // comparison == 0 if strings are equal
