@@ -1,4 +1,4 @@
-# Binary Search ![Stars](https://img.shields.io/github/stars/realTristan/BinarySearch?color=brightgreen) ![Watchers](https://img.shields.io/github/watchers/realTristan/BinarySearch?label=Watchers)
+# Binary Search ![Stars](https://img.shields.io/github/stars/Simpson-Computer-Technologies-Research/BinarySearch?color=brightgreen) ![Watchers](https://img.shields.io/github/watchers/Simpson-Computer-Technologies-Research/BinarySearch?label=Watchers)
 ![4586329-map-magnifying-glasses-vintage](https://user-images.githubusercontent.com/75189508/227647702-bc2766da-1571-4504-95c8-fac6065ca6e2.jpg)
 
 # About
